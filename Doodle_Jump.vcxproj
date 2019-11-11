@@ -19,15 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
-    <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
-    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="PLAT.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameObjects\Headers\Doodle.h" />
-    <ClInclude Include="GameObjects\Headers\PLAT.h" />
-    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="PLAT.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
