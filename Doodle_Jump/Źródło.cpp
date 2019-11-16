@@ -11,11 +11,12 @@ int main()
 
     app.setFramerateLimit(60);
     float updateMultiplication{1.0f};
+    float currentDelta{1.0f};
     bool exitStatus = EXIT_FAILURE;
 
     while (app.isOpen())
     {
-        for (auto i = delta * updateMultiplication; i > 0.0f; i -= delta)
+        for (currentDelta = updateMultiplication * delta; currentDelta > 0.0f; currentDelta -= delta)
         {
             while (app.pollEvent(e))
             {
@@ -25,14 +26,19 @@ int main()
                     app.close();
                 }
                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::RBracket))
-                    updateMultiplication *= 1.5f;
+                    updateMultiplication *= 1.25f;
                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LBracket))
-                    updateMultiplication *= 0.5f;
+                    updateMultiplication *= 0.75f;
                 else
                     game->processInput(e);
             }
-            game->update(delta * updateMultiplication);
+
+            if (currentDelta > delta)
+                game->update(delta);
+            else
+                game->update(currentDelta);
         }
+
         game->render(app);
     }
     return exitStatus | (game->getEndStatus() ? EXIT_SUCCESS : EXIT_FAILURE);

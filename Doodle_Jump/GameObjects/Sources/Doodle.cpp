@@ -19,11 +19,9 @@ void Doodle::update(float deltaTime)
     {
     case MoveDirection::LEFT:
         setPosition(sf::Vector2f(m_position.x - deltaTime * 100, m_position.y));
-        m_movingDirection = MoveDirection::NONE;
         break;
     case MoveDirection::RIGHT:
         setPosition(sf::Vector2f(m_position.x + deltaTime* 100, m_position.y));
-        m_movingDirection = MoveDirection::NONE;
         break;
     case MoveDirection::NONE:
         break;
@@ -49,7 +47,7 @@ void Doodle::render(sf::RenderTarget& app)
     if (m_dirty)
     {
         m_doodleSprite.setPosition(m_position);
-        app.draw(m_doodleSprite);
+		app.draw(m_doodleSprite);
         m_dirty = false;
     }
 }
@@ -64,6 +62,8 @@ void Doodle::processInput(const sf::Event& e)
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
         move(MoveDirection::LEFT);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         move(MoveDirection::RIGHT);
+    else
+        move(MoveDirection::NONE);
 }
