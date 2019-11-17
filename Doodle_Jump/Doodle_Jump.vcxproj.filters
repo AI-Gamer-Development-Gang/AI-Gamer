@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Game">
-      <UniqueIdentifier>{eeddba39-d91f-4833-93b1-48d665b4c0b3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GameObjects">
       <UniqueIdentifier>{6250273d-65c0-446f-9f2f-5b33c314b1e9}</UniqueIdentifier>
     </Filter>
@@ -13,28 +10,61 @@
     <Filter Include="GameObjects\Sources">
       <UniqueIdentifier>{c776b789-fe0b-42b7-820a-8d57139148ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{7a1feea9-ca22-4479-9f85-e1aad2c44ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Headers">
+      <UniqueIdentifier>{5fdcf3a1-3e89-42b4-8a12-c8d6fb48bb63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Sources">
+      <UniqueIdentifier>{14a09c2e-c014-4b3a-b363-129b08831c34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Źródło.cpp" />
-    <ClCompile Include="Game\Game.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
     <ClCompile Include="GameObjects\Sources\Doodle.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
     <ClCompile Include="GameObjects\Sources\PLAT.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Configuration\Sources\GameState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\MenuState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\ResultsState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\State.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\StateManager.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game\Game.h">
-      <Filter>Game</Filter>
-    </ClInclude>
     <ClInclude Include="GameObjects\Headers\Doodle.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
     <ClInclude Include="GameObjects\Headers\PLAT.h">
       <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\GameState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\MenuState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\ResultsState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\State.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\StateManager.h">
+      <Filter>Configuration\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

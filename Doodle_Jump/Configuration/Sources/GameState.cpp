@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "../Headers/GameState.h"
 
 Game::Game()
     : m_isPlaying{true}
@@ -6,17 +6,9 @@ Game::Game()
     , m_doodle{sf::Vector2f{10.0f, 10.0f}}
     , m_plat{sf::Vector2f{110.0f, 10.0f}}
 {
-    if (m_instance == nullptr)
-        m_instance = this;
-    else
-        assert(!"m_instance is not nullptr");
-
     assert(m_backgroundTexture.loadFromFile("Images/background.png"));
     m_backgroundSprite.setTexture(m_backgroundTexture);
 }
-
-Game* Game::m_instance;
-Game& Game::getInstance() { return *m_instance; }
 
 void Game::processInput(const sf::Event& e) { m_doodle.processInput(e); }
 

@@ -19,15 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Configuration\Sources\GameState.cpp" />
+    <ClCompile Include="Configuration\Sources\MenuState.cpp" />
+    <ClCompile Include="Configuration\Sources\ResultsState.cpp" />
+    <ClCompile Include="Configuration\Sources\State.cpp" />
+    <ClCompile Include="Configuration\Sources\StateManager.cpp" />
     <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
     <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
-    <ClCompile Include="Game\Game.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Configuration\Headers\GameState.h" />
+    <ClInclude Include="Configuration\Headers\MenuState.h" />
+    <ClInclude Include="Configuration\Headers\ResultsState.h" />
+    <ClInclude Include="Configuration\Headers\State.h" />
+    <ClInclude Include="Configuration\Headers\StateManager.h" />
     <ClInclude Include="GameObjects\Headers\Doodle.h" />
     <ClInclude Include="GameObjects\Headers\PLAT.h" />
-    <ClInclude Include="Game\Game.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

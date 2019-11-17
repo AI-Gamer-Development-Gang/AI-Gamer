@@ -1,16 +1,16 @@
+#pragma once 
+
 #include <SFML/Graphics.hpp>
 #include <assert.h>
-#include "../GameObjects/Headers/Doodle.h"
-#include "../GameObjects/Headers/PLAT.h"
+#include "State.h"
+#include "../../GameObjects/Headers/Doodle.h"
+#include "../../GameObjects/Headers/PLAT.h"
 
-#pragma once
-class Game
+class Game : public State
 {
   public:
     Game();
-    Game(const Game&) = delete;
-    Game& operator=(const Game&) = delete;
-    ~Game(){};
+    ~Game() = default;
     static Game& getInstance();
 
     void processInput(const sf::Event& e);
@@ -22,7 +22,6 @@ class Game
   private:
     bool m_isPlaying;
     bool m_exitStatus;
-    static Game* m_instance;
     bool test;
     Plat m_plat;
     Doodle m_doodle;
