@@ -1,4 +1,5 @@
-#include "../Doodle_Jump/Game/Game.h"
+#include <SFML/Graphics.hpp>
+#include "../Doodle_Jump/Configuration/Headers/StateManager.h"
 #include <iostream>
 #include <memory>
 constexpr float delta = 1.0f / 60.0f;
@@ -7,7 +8,7 @@ int main()
 {
     sf::RenderWindow app(sf::VideoMode(400, 533), "Doodle Game!");
     sf::Event e;
-    const std::unique_ptr<Game> game(std::make_unique<Game>());
+    const std::unique_ptr<StateManager> stateManager(std::make_unique<StateManager>());
 
     app.setFramerateLimit(60);
     float updateMultiplication{1.0f};
@@ -30,16 +31,16 @@ int main()
                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LBracket))
                     updateMultiplication *= 0.75f;
                 else
-                    game->processInput(e);
+                    stateManager->processInput(e);
             }
 
             if (currentDelta > delta)
-                game->update(delta);
+                stateManager->update(delta);
             else
-                game->update(currentDelta);
+                stateManager->update(currentDelta);
         }
 
-        game->render(app);
+        stateManager->render(app);
     }
-    return exitStatus | (game->getEndStatus() ? EXIT_SUCCESS : EXIT_FAILURE);
+    return exitStatus | (stateManager->getEndStatus() ? EXIT_SUCCESS : EXIT_FAILURE);
 }

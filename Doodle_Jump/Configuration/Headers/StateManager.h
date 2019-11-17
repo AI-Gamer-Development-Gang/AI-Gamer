@@ -3,11 +3,13 @@
 #include "State.h"
 #include <memory>
 
+class State;
 class StateManager
 {
   private:
-    std::unique_ptr<State> currentState;
+    std::unique_ptr<State> m_currentState;
     static StateManager* m_instance;
+    bool m_exitStatus;
 
   public:
     StateManager();
@@ -15,12 +17,12 @@ class StateManager
     StateManager& operator=(const StateManager&) = delete;
     ~StateManager()                              = default;
 
-    enum class States
-    {
-        Menu    = 0,
-        Game    = 1,
-        Results = 2
-    };
     StateManager& getInstance();
-    void changeState(States newState);
+    void setState(State::States newState);
+
+    void processInput(const sf::Event& e);
+    void update(const float& delta);
+    void render(sf::RenderWindow& app);
+
+    const bool getEndStatus() const;
 };

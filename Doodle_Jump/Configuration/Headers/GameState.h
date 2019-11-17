@@ -1,31 +1,30 @@
-#pragma once 
+#pragma once
 
-#include <SFML/Graphics.hpp>
-#include <assert.h>
-#include "State.h"
 #include "../../GameObjects/Headers/Doodle.h"
 #include "../../GameObjects/Headers/PLAT.h"
+#include "StateManager.h"
+#include "State.h"
+#include <SFML/Graphics.hpp>
+#include <assert.h>
 
-class Game : public State
+class GameState : public State
 {
   public:
-    Game();
-    ~Game() = default;
-    static Game& getInstance();
+    GameState(StateManager* stateManager);
+    ~GameState() = default;
 
     void processInput(const sf::Event& e);
     void update(const float& delta);
     void render(sf::RenderWindow& app);
 
-    const bool getEndStatus() const;
+    void init() override;
+    void setState(States newState) override;
 
   private:
     bool m_isPlaying;
-    bool m_exitStatus;
-    bool test;
     Plat m_plat;
     Doodle m_doodle;
-
+    StateManager* m_stateManager;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
 };
