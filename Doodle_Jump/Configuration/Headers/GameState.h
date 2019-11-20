@@ -2,6 +2,7 @@
 
 #include "../../GameObjects/Headers/Doodle.h"
 #include "../../GameObjects/Headers/PLAT.h"
+#include "../../GUI/Headers/TEXT_manager.h"
 #include "StateManager.h"
 #include "State.h"
 #include <SFML/Graphics.hpp>
@@ -24,6 +25,7 @@ class GameState : public State
     bool m_isPlaying;
     Plat m_plat;
     Doodle m_doodle;
+	TEXT_manager m_TEXT_manager;
     StateManager* m_stateManager;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
