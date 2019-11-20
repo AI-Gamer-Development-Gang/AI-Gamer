@@ -3,7 +3,7 @@
 #include <iostream>
 
 MenuState::MenuState(StateManager* stateManager)
-    : m_stateManager(stateManager)
+	: m_stateManager(stateManager)
 {
 }
 
@@ -19,6 +19,7 @@ void MenuState::render(sf::RenderWindow& app)
 {
     app.draw(m_backgroundSprite);
     std::cout << "Menu" << std::endl;
+	m_TEXT_manager.render(app);
 }
 
 void MenuState::init()
