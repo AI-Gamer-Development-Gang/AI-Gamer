@@ -26,6 +26,7 @@
     <ClCompile Include="Configuration\Sources\StateManager.cpp" />
     <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
     <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
+    <ClCompile Include="GameObjects\Sources\PlatManager.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +37,7 @@
     <ClInclude Include="Configuration\Headers\StateManager.h" />
     <ClInclude Include="GameObjects\Headers\Doodle.h" />
     <ClInclude Include="GameObjects\Headers\PLAT.h" />
+    <ClInclude Include="GameObjects\Headers\PlatManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

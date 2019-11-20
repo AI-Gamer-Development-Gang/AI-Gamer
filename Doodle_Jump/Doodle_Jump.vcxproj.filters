@@ -43,6 +43,9 @@
     <ClCompile Include="Configuration\Sources\StateManager.cpp">
       <Filter>Configuration\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="GameObjects\Sources\PlatManager.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObjects\Headers\Doodle.h">
@@ -65,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="Configuration\Headers\StateManager.h">
       <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\PlatManager.h">
+      <Filter>GameObjects\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
