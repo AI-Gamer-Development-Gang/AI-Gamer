@@ -1,3 +1,4 @@
+#include "Configuration/Headers/Defines.h"
 #include <SFML/Graphics.hpp>
 #include "../Doodle_Jump/Configuration/Headers/StateManager.h"
 #include <iostream>
@@ -6,7 +7,8 @@ constexpr float delta = 1.0f / 60.0f;
 
 int main()
 {
-    sf::RenderWindow app(sf::VideoMode(400, 533), "Doodle Game!");
+    srand(time(NULL));
+    sf::RenderWindow app(sf::VideoMode(windowSizeX, windowSizeY), "Doodle Game!");
     sf::Event e;
     const std::unique_ptr<StateManager> stateManager(std::make_unique<StateManager>());
 

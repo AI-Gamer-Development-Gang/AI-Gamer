@@ -34,9 +34,6 @@
     <ClCompile Include="GameObjects\Sources\Doodle.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameObjects\Sources\PLAT.cpp">
-      <Filter>GameObjects\Sources</Filter>
-    </ClCompile>
     <ClCompile Include="Configuration\Sources\GameState.cpp">
       <Filter>Configuration\Sources</Filter>
     </ClCompile>
@@ -61,12 +58,12 @@
     <ClCompile Include="GameObjects\Sources\PlatManager.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="GameObjects\Sources\Plat.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObjects\Headers\Doodle.h">
-      <Filter>GameObjects\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObjects\Headers\PLAT.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Configuration\Headers\GameState.h">
@@ -92,6 +89,12 @@
     </ClInclude>
     <ClInclude Include="GameObjects\Headers\PlatManager.h">
       <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\Plat.h">
+      <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\Defines.h">
+      <Filter>Configuration\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

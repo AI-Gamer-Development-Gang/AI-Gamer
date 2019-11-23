@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../../GameObjects/Headers/Doodle.h"
-#include "../../GameObjects/Headers/PLAT.h"
+#include "../../GameObjects/Headers/PlatManager.h"
 #include "../../GUI/Headers/TEXT_manager.h"
 #include "StateManager.h"
 #include "State.h"
@@ -23,7 +23,7 @@ class GameState : public State
 
   private:
     bool m_isPlaying;
-    Plat m_plat;
+    PlatManager m_platManager;
     Doodle m_doodle;
 	TEXT_manager m_TEXT_manager;
     StateManager* m_stateManager;

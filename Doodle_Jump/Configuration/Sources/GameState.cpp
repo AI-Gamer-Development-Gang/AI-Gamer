@@ -3,7 +3,7 @@
 GameState::GameState(StateManager* stateManager)
     : m_isPlaying{true}
     , m_doodle{sf::Vector2f{10.0f, 10.0f}}
-    , m_plat{sf::Vector2f{110.0f, 10.0f}}
+    , m_platManager{}
     , m_stateManager(stateManager)
 {
 }
@@ -18,14 +18,14 @@ void GameState::processInput(const sf::Event& e)
 void GameState::update(const float& delta)
 {
     m_doodle.update(delta);
-    m_plat.update(delta);
+    m_platManager.update(delta);
 }
 
 void GameState::render(sf::RenderWindow& app)
 {
     app.draw(m_backgroundSprite);
     m_doodle.render(app);
-    m_plat.render(app);
+    m_platManager.render(app);
 }
 
 void GameState::init()

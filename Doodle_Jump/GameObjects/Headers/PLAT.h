@@ -19,12 +19,15 @@ class Plat
         RIGHT = 1,
         LEFT  = 2
     };
+
+    Plat();
     Plat(const sf::Vector2f& defaultPosition);
     ~Plat();
     void update(float deltaTime);
     void render(sf::RenderTarget& app);
     void setDefaultPosition(const sf::Vector2f& newDefaultPosition);
     void setPosition(const sf::Vector2f& newPosition);
+    const sf::Vector2f getPosition() const;
     void move(float deltaTime, MoveDirection moveDirection);
     void resetPosition();
 };

@@ -17,5 +17,5 @@ void TEXT_manager::update(float deltaTime)
 
 void TEXT_manager::render(sf::RenderTarget& app)
 {
-	app.draw(_text[0].getTEXT());
+	//app.draw(_text[0].getTEXT());
 }
