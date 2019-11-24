@@ -1,40 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Game">
-      <UniqueIdentifier>{eeddba39-d91f-4833-93b1-48d665b4c0b3}</UniqueIdentifier>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{8ae9ecb8-1165-4968-9b96-61633eba0603}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObjects">
-      <UniqueIdentifier>{6250273d-65c0-446f-9f2f-5b33c314b1e9}</UniqueIdentifier>
+      <UniqueIdentifier>{541d4353-9f58-4b11-b753-1796f9e7c4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{69153546-d063-48a4-b92a-c6735f3d8893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Headers">
+      <UniqueIdentifier>{3ca25ebf-7e43-48ae-956e-b396d520177e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Sources">
+      <UniqueIdentifier>{027ba729-6a94-4f53-aa96-8e032ad7c6bf}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObjects\Headers">
-      <UniqueIdentifier>{ee0cb6cb-5076-42b7-80f0-cd0130c36eee}</UniqueIdentifier>
+      <UniqueIdentifier>{4828220d-9229-409e-9622-e833a8cec47c}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObjects\Sources">
-      <UniqueIdentifier>{c776b789-fe0b-42b7-820a-8d57139148ba}</UniqueIdentifier>
+      <UniqueIdentifier>{4924c212-a885-45b6-b70c-2748b220259a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Headers">
+      <UniqueIdentifier>{729bb5cc-f361-4cde-9ab6-df3e538a3de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Sources">
+      <UniqueIdentifier>{2c8998f2-196c-4198-92c5-11cab977a20a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Źródło.cpp" />
-    <ClCompile Include="Game\Game.cpp">
-      <Filter>Game</Filter>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\GameState.cpp">
+      <Filter>Configuration\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameObjects\Sources\Doodle.cpp">
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\MenuState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\ResultsState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\State.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\StateManager.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\Doodle.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameObjects\Sources\PLAT.cpp">
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PLAT.cpp">
       <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT.cpp">
+      <Filter>GUI\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT_manager.cpp">
+      <Filter>GUI\Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game\Game.h">
-      <Filter>Game</Filter>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\Defines.h">
+      <Filter>Configuration\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="GameObjects\Headers\Doodle.h">
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\GameState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\MenuState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\ResultsState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\State.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\StateManager.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\Doodle.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="GameObjects\Headers\PLAT.h">
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PLAT.h">
       <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h">
+      <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT.h">
+      <Filter>GUI\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT_manager.h">
+      <Filter>GUI\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

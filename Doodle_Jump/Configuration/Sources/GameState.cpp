@@ -1,42 +1,40 @@
-#include "Game.h"
+#include "../Headers/GameState.h"
 
-Game::Game()
+GameState::GameState(StateManager* stateManager)
     : m_isPlaying{true}
-    , m_exitStatus{0}
     , m_doodle{sf::Vector2f{10.0f, 10.0f}}
-    , m_plat{sf::Vector2f{110.0f, 10.0f}}
+    , m_platManager{}
+    , m_stateManager(stateManager)
 {
-    if (m_instance == nullptr)
-        m_instance = this;
-    else
-        assert(!"m_instance is not nullptr");
+}
 
+void GameState::processInput(const sf::Event& e)
+{
+    m_doodle.processInput(e);
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+        setState(States::Results);
+}
+
+void GameState::update(const float& delta)
+{
+    m_doodle.update(delta);
+    m_platManager.update(delta);
+}
+
+void GameState::render(sf::RenderWindow& app)
+{
+    app.draw(m_backgroundSprite);
+    m_doodle.render(app);
+    m_platManager.render(app);
+}
+
+void GameState::init()
+{
     assert(m_backgroundTexture.loadFromFile("Images/background.png"));
     m_backgroundSprite.setTexture(m_backgroundTexture);
 }
 
-Game* Game::m_instance;
-Game& Game::getInstance() { return *m_instance; }
-
-void Game::processInput(const sf::Event& e) { m_doodle.processInput(e); }
-
-void Game::update(const float& delta)
-{
-    m_doodle.update(delta);
-    m_plat.update(delta);
-}
-
-void Game::render(sf::RenderWindow& app)
-{
-    app.setActive();
-    app.clear();
-    app.draw(m_backgroundSprite);
-    m_doodle.render(app);
-    m_plat.render(app);
-    app.display();
-}
-
-const bool Game::getEndStatus() const { return m_exitStatus; }
+void GameState::setState(States newState) { m_stateManager->setState(newState); }
 
 //
 // sf::Texture t1, t2, t3, t4;

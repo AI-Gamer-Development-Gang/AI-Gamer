@@ -19,27 +19,42 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
-    <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
-    <ClCompile Include="Game\Game.cpp" />
-    <ClCompile Include="Źródło.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\GameState.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\MenuState.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\ResultsState.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\State.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\StateManager.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\Doodle.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PLAT.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT_manager.cpp" />
+    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameObjects\Headers\Doodle.h" />
-    <ClInclude Include="GameObjects\Headers\PLAT.h" />
-    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\Defines.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\GameState.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\MenuState.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\ResultsState.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\State.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\StateManager.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\Doodle.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PLAT.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT.h" />
+    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT_manager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E060A0DD-B5CE-451B-9352-FACC7B08EBEF}</ProjectGuid>
     <RootNamespace>DoodleJump</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -52,7 +67,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -87,10 +102,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Dokumenty\Pulpit\programming_stuff\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programy\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\Dokumenty\Pulpit\programming_stuff\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Programy\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -120,7 +135,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>D:\Dokumenty\Pulpit\programming_stuff\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Programy\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
