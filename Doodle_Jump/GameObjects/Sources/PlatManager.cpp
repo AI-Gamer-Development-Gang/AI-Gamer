@@ -9,8 +9,7 @@ PlatManager::PlatManager()
 
 void PlatManager::update(float deltaTime)
 {
-    incrementGeneralYPosition(m_movingDistance * std::sinf(m_movingLevel));
-    m_movingLevel += deltaTime * m_movingStep;
+    
 }
 
 void PlatManager::render(sf::RenderTarget& app)

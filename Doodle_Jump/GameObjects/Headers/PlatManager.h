@@ -8,11 +8,6 @@
 class PlatManager
 {
   public:
-    enum class MoveDirection
-    {
-        UP = 0,
-        DOWN = 1
-    };
     PlatManager();
     ~PlatManager() = default;
 
@@ -23,8 +18,6 @@ class PlatManager
 	
   private:
     std::vector<std::unique_ptr<Plat>> m_plats{};
-    const float m_movingStep{5.f};
-    const float m_movingDistance{5.f};
-    float m_movingLevel{};
-    MoveDirection m_moveDirection{MoveDirection::UP};
+    const float m_doodleJumpAcceleration;
+    const float m_doodleWeight;
 };
