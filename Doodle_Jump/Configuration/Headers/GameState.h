@@ -25,7 +25,7 @@ class GameState : public State
     bool m_isPlaying;
     PlatManager m_platManager;
     Doodle m_doodle;
-	TEXT_manager m_TEXT_manager;
+	TEXT_manager m_TEXT_manager; //wciecie
     StateManager* m_stateManager;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
