@@ -17,4 +17,5 @@ class State
     virtual void processInput(const sf::Event& e) = 0;
     virtual void update(const float& delta)       = 0;
     virtual void render(sf::RenderWindow& app)    = 0;
+  //tutaj calosc sie rozjechala
 };
