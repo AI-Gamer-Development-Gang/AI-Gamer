@@ -7,10 +7,7 @@ PlatManager::PlatManager()
         m_plats.emplace_back(std::make_unique<Plat>());
 }
 
-void PlatManager::update(float deltaTime)
-{
-    
-}
+void PlatManager::update(float deltaTime) {}
 
 void PlatManager::render(sf::RenderTarget& app)
 {
