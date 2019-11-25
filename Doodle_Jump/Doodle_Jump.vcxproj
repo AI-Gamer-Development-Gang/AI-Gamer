@@ -24,10 +24,10 @@
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\ResultsState.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\State.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\StateManager.cpp" />
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\Doodle.cpp" />
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PLAT.cpp" />
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
+    <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
+    <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
+    <ClCompile Include="GameObjects\Sources\PlatManager.cpp" />
     <ClCompile Include="GUI\Sources\TEXT.cpp" />
     <ClCompile Include="GUI\Sources\TEXT_manager.cpp" />
   </ItemGroup>
@@ -38,9 +38,9 @@
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\ResultsState.h" />
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\State.h" />
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\StateManager.h" />
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\Doodle.h" />
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PLAT.h" />
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h" />
+    <ClInclude Include="GameObjects\Headers\Doodle.h" />
+    <ClInclude Include="GameObjects\Headers\PLAT.h" />
+    <ClInclude Include="GameObjects\Headers\PlatManager.h" />
     <ClInclude Include="GUI\Headers\TEXT.h" />
     <ClInclude Include="GUI\Headers\TEXT_manager.h" />
   </ItemGroup>

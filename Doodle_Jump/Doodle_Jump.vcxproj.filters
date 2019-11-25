@@ -13,12 +13,6 @@
     <Filter Include="Configuration\Sources">
       <UniqueIdentifier>{027ba729-6a94-4f53-aa96-8e032ad7c6bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameObjects\Headers">
-      <UniqueIdentifier>{4828220d-9229-409e-9622-e833a8cec47c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GameObjects\Sources">
-      <UniqueIdentifier>{4924c212-a885-45b6-b70c-2748b220259a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GUI">
       <UniqueIdentifier>{165fcc8c-a53b-439a-9e8f-a1999206ebb5}</UniqueIdentifier>
     </Filter>
@@ -27,6 +21,12 @@
     </Filter>
     <Filter Include="GUI\Sources">
       <UniqueIdentifier>{76709cc4-aae5-400c-a2ee-6be135ff7fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Headers">
+      <UniqueIdentifier>{951574e5-5fbe-41cd-af93-81107a667ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Sources">
+      <UniqueIdentifier>{55fef457-43b2-424e-8db6-9a53e81a88b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,20 +46,20 @@
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Sources\StateManager.cpp">
       <Filter>Configuration\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\Doodle.cpp">
-      <Filter>GameObjects\Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PLAT.cpp">
-      <Filter>GameObjects\Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp">
-      <Filter>GameObjects\Sources</Filter>
-    </ClCompile>
     <ClCompile Include="GUI\Sources\TEXT.cpp">
       <Filter>GUI\Sources</Filter>
     </ClCompile>
     <ClCompile Include="GUI\Sources\TEXT_manager.cpp">
       <Filter>GUI\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Sources\Doodle.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Sources\PLAT.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Sources\PlatManager.cpp">
+      <Filter>GameObjects\Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -81,20 +81,20 @@
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\StateManager.h">
       <Filter>Configuration\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\Doodle.h">
-      <Filter>GameObjects\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PLAT.h">
-      <Filter>GameObjects\Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h">
-      <Filter>GameObjects\Headers</Filter>
-    </ClInclude>
     <ClInclude Include="GUI\Headers\TEXT.h">
       <Filter>GUI\Headers</Filter>
     </ClInclude>
     <ClInclude Include="GUI\Headers\TEXT_manager.h">
       <Filter>GUI\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\Doodle.h">
+      <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\PLAT.h">
+      <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\PlatManager.h">
+      <Filter>GameObjects\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
