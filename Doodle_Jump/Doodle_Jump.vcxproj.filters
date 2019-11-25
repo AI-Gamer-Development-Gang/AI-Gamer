@@ -7,9 +7,6 @@
     <Filter Include="GameObjects">
       <UniqueIdentifier>{541d4353-9f58-4b11-b753-1796f9e7c4e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GUI">
-      <UniqueIdentifier>{69153546-d063-48a4-b92a-c6735f3d8893}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Configuration\Headers">
       <UniqueIdentifier>{3ca25ebf-7e43-48ae-956e-b396d520177e}</UniqueIdentifier>
     </Filter>
@@ -22,11 +19,14 @@
     <Filter Include="GameObjects\Sources">
       <UniqueIdentifier>{4924c212-a885-45b6-b70c-2748b220259a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{165fcc8c-a53b-439a-9e8f-a1999206ebb5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="GUI\Headers">
-      <UniqueIdentifier>{729bb5cc-f361-4cde-9ab6-df3e538a3de0}</UniqueIdentifier>
+      <UniqueIdentifier>{e0752da3-e6bc-4437-8f9f-2c0a9f895301}</UniqueIdentifier>
     </Filter>
     <Filter Include="GUI\Sources">
-      <UniqueIdentifier>{2c8998f2-196c-4198-92c5-11cab977a20a}</UniqueIdentifier>
+      <UniqueIdentifier>{76709cc4-aae5-400c-a2ee-6be135ff7fe5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -55,10 +55,10 @@
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT.cpp">
+    <ClCompile Include="GUI\Sources\TEXT.cpp">
       <Filter>GUI\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT_manager.cpp">
+    <ClCompile Include="GUI\Sources\TEXT_manager.cpp">
       <Filter>GUI\Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -90,10 +90,10 @@
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT.h">
+    <ClInclude Include="GUI\Headers\TEXT.h">
       <Filter>GUI\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT_manager.h">
+    <ClInclude Include="GUI\Headers\TEXT_manager.h">
       <Filter>GUI\Headers</Filter>
     </ClInclude>
   </ItemGroup>

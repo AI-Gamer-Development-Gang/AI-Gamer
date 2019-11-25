@@ -27,9 +27,9 @@
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\Doodle.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PLAT.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Sources\PlatManager.cpp" />
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT.cpp" />
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Sources\TEXT_manager.cpp" />
     <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
+    <ClCompile Include="GUI\Sources\TEXT.cpp" />
+    <ClCompile Include="GUI\Sources\TEXT_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\Configuration\Headers\Defines.h" />
@@ -41,8 +41,8 @@
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\Doodle.h" />
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PLAT.h" />
     <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GameObjects\Headers\PlatManager.h" />
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT.h" />
-    <ClInclude Include="..\..\Doodle_Jump\Doodle_Jump\GUI\Headers\TEXT_manager.h" />
+    <ClInclude Include="GUI\Headers\TEXT.h" />
+    <ClInclude Include="GUI\Headers\TEXT_manager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
