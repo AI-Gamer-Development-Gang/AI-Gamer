@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
     <ClCompile Include="Configuration\Sources\GameState.cpp" />
     <ClCompile Include="Configuration\Sources\MenuState.cpp" />
     <ClCompile Include="Configuration\Sources\ResultsState.cpp" />
@@ -30,6 +29,7 @@
     <ClCompile Include="GameObjects\Sources\PlatManager.cpp" />
     <ClCompile Include="GUI\Sources\TEXT.cpp" />
     <ClCompile Include="GUI\Sources\TEXT_manager.cpp" />
+    <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Configuration\Headers\Defines.h" />

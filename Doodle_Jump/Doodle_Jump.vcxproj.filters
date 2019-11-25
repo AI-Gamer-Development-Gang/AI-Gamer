@@ -30,7 +30,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Doodle_Jump\Doodle_Jump\Źródło.cpp" />
     <ClCompile Include="GUI\Sources\TEXT.cpp">
       <Filter>GUI\Sources</Filter>
     </ClCompile>
@@ -61,6 +60,7 @@
     <ClCompile Include="Configuration\Sources\StateManager.cpp">
       <Filter>Configuration\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GUI\Headers\TEXT.h">
