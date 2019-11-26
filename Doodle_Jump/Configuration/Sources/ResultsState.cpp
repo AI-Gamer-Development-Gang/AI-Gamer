@@ -28,3 +28,4 @@ void ResultsState::init()
 }
 
 void ResultsState::setState(States newState) { m_stateManager->setState(newState); }
+//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda

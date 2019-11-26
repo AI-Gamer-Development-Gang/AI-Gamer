@@ -35,7 +35,7 @@ void GameState::init()
 }
 
 void GameState::setState(States newState) { m_stateManager->setState(newState); }
-
+//ten kod zakomentowany do gotowej wersji bym juz wydupcyl
 //
 // sf::Texture t1, t2, t3, t4;
 // t3.loadFromFile("images/doodle.png");

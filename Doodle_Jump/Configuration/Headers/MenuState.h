@@ -20,7 +20,7 @@ class MenuState : public State
 
   private:
     StateManager* m_stateManager;
-	TEXT_manager m_TEXT_manager;
+    TEXT_manager m_TEXT_manager;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
 };

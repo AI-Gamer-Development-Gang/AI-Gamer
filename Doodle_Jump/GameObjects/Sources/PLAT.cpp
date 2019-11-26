@@ -24,6 +24,7 @@ Plat::~Plat() {}
 void Plat::update(float deltaTime) {}
 
 void Plat::setDefaultPosition(const sf::Vector2f& newDefaultPosition) { m_defaultPosition = newDefaultPosition; }
+//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
 
 void Plat::setPosition(const sf::Vector2f& newPosition)
 {
@@ -34,6 +35,7 @@ void Plat::setPosition(const sf::Vector2f& newPosition)
 const sf::Vector2f Plat::getPosition() const { return m_position; }
 
 void Plat::move(float deltaTime, MoveDirection moveDirection) { assert("Function can in future come to development"); }
+//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
 
 void Plat::render(sf::RenderTarget& app)
 {
