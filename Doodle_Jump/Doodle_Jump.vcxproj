@@ -29,6 +29,7 @@
     <ClCompile Include="GUI\Sources\TEXT.cpp" />
     <ClCompile Include="GUI\Sources\TEXT_manager.cpp" />
     <ClCompile Include="GameObjects\Sources\PlatManager.cpp" />
+    <ClCompile Include="Math\Sources\AABB.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +44,7 @@
     <ClInclude Include="GUI\Headers\TEXT.h" />
     <ClInclude Include="GUI\Headers\TEXT_manager.h" />
     <ClInclude Include="GameObjects\Headers\PlatManager.h" />
+    <ClInclude Include="Math\Headers\AABB.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

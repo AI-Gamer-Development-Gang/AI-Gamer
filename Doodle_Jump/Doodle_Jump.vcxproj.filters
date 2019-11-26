@@ -28,6 +28,15 @@
     <Filter Include="GUI\Sources">
       <UniqueIdentifier>{e094f8ff-6197-418f-90e3-d5eac45a9908}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{7e1b3987-147e-457f-82a7-381877b94548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Headers">
+      <UniqueIdentifier>{ba491963-6d16-4c33-91c0-614478e36a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Sources">
+      <UniqueIdentifier>{43dc3987-cee3-4a50-aae3-2a342dc89db9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Źródło.cpp" />
@@ -60,6 +69,9 @@
     </ClCompile>
     <ClCompile Include="GameObjects\Sources\Plat.cpp">
       <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Sources\AABB.cpp">
+      <Filter>Math\Sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +107,9 @@
     </ClInclude>
     <ClInclude Include="Configuration\Headers\Defines.h">
       <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Headers\AABB.h">
+      <Filter>Math\Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
