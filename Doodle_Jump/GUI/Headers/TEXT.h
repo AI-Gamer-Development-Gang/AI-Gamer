@@ -12,7 +12,6 @@ private:
 	sf::FloatRect m_Bounds = m_Text.getLocalBounds();
 	bool m_dirty;
 public:
-	TEXT();
 	TEXT(float x, float y, std::string name);
 	~TEXT();
 	void update(float deltaTime);

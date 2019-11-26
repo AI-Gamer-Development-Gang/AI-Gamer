@@ -2,6 +2,7 @@
 
 #include "State.h"
 #include "StateManager.h"
+#include "../../GUI/Headers/TEXT_manager.h"
 #include <SFML/Graphics.hpp>
 
 class ResultsState : public State
@@ -19,6 +20,7 @@ class ResultsState : public State
 
   private:
     StateManager* m_stateManager;
+	TEXT_manager m_TEXT_manager;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
 };

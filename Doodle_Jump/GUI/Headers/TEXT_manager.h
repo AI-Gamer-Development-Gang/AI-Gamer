@@ -2,17 +2,18 @@
 
 #include <SFML/Graphics.hpp>
 #include "TEXT.h"
-#include <iostream>
 #include <vector>
 
 class TEXT_manager
 {
 private:
-	std::vector<std::unique_ptr<TEXT>> m_texts{};;
+	std::vector<std::unique_ptr<TEXT>> m_texts{};
 
+	int m_state;
 public:
-	TEXT_manager();
+	TEXT_manager(int m_state);
 	~TEXT_manager();
+
 	void update(float deltaTime);
 	void render(sf::RenderTarget& app);
 };

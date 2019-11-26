@@ -3,8 +3,8 @@
 GameState::GameState(StateManager* stateManager)
     : m_isPlaying{true}
     , m_doodle{sf::Vector2f{10.0f, 10.0f}}
-    , m_platManager{}
     , m_stateManager(stateManager)
+	, m_TEXT_manager(1)
 {
 }
 
@@ -26,6 +26,7 @@ void GameState::render(sf::RenderWindow& app)
     app.draw(m_backgroundSprite);
     m_doodle.render(app);
     m_platManager.render(app);
+	m_TEXT_manager.render(app);
 }
 
 void GameState::init()

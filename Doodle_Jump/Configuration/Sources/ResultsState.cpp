@@ -4,6 +4,7 @@
 
 ResultsState::ResultsState(StateManager* stateManager)
     : m_stateManager(stateManager)
+	, m_TEXT_manager(2)
 {
 }
 
@@ -19,6 +20,7 @@ void ResultsState::render(sf::RenderWindow& app)
 {
     app.draw(m_backgroundSprite);
     std::cout << "Results" << std::endl;
+	m_TEXT_manager.render(app);
 }
 
 void ResultsState::init()
