@@ -24,5 +24,11 @@ void PointCalculator::update(float deltaTime) { }
 
 void PointCalculator::render(sf::RenderTarget& app)
 {
-	app.draw(m_Text);
+	m_dirty = true;
+	if (m_dirty)
+	{
+		app.draw(m_Text);
+		m_dirty = false;
+	}
+	
 }
