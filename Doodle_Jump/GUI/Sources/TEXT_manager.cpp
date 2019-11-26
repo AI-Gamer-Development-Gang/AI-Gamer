@@ -12,7 +12,7 @@ TEXT_manager::TEXT_manager(int m_state)
 		m_texts.emplace_back(std::make_unique<TEXT>(200.f, 470.f, "EXIT"));
 		break;
 	case 1:
-		m_texts.emplace_back(std::make_unique<TEXT>(300.f, 15.f, "YOUR SCORE:"));
+		m_texts.emplace_back(std::make_unique<TEXT>(100.f, 21.f, "YOUR SCORE:"));
 		break;
 	case 2:
 		m_texts.emplace_back(std::make_unique<TEXT>(200.f, 420.f, "BACK TO MENU"));

@@ -27,6 +27,7 @@
     <ClCompile Include="GameObjects\Sources\Doodle.cpp" />
     <ClCompile Include="GameObjects\Sources\PLAT.cpp" />
     <ClCompile Include="GameObjects\Sources\PlatManager.cpp" />
+    <ClCompile Include="GameObjects\Sources\PointCalculator.cpp" />
     <ClCompile Include="GUI\Sources\TEXT.cpp" />
     <ClCompile Include="GUI\Sources\TEXT_manager.cpp" />
     <ClCompile Include="Źródło.cpp" />
@@ -41,6 +42,7 @@
     <ClInclude Include="GameObjects\Headers\Doodle.h" />
     <ClInclude Include="GameObjects\Headers\PLAT.h" />
     <ClInclude Include="GameObjects\Headers\PlatManager.h" />
+    <ClInclude Include="GameObjects\Headers\PointCalculator.h" />
     <ClInclude Include="GUI\Headers\TEXT.h" />
     <ClInclude Include="GUI\Headers\TEXT_manager.h" />
   </ItemGroup>

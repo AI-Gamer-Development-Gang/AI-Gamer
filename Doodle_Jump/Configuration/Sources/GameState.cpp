@@ -27,6 +27,7 @@ void GameState::render(sf::RenderWindow& app)
     m_doodle.render(app);
     m_platManager.render(app);
 	m_TEXT_manager.render(app);
+	m_PointCalculator.render(app);
 }
 
 void GameState::init()

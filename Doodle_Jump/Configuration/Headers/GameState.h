@@ -3,6 +3,7 @@
 #include "../../GameObjects/Headers/Doodle.h"
 #include "../../GameObjects/Headers/PlatManager.h"
 #include "../../GUI/Headers/TEXT_manager.h"
+#include "../../GameObjects/Headers/PointCalculator.h"
 #include "StateManager.h"
 #include "State.h"
 #include <SFML/Graphics.hpp>
@@ -27,6 +28,7 @@ class GameState : public State
     Doodle m_doodle;
     StateManager* m_stateManager;
 	TEXT_manager m_TEXT_manager;
+	PointCalculator m_PointCalculator;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
 };

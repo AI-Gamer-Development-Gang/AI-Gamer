@@ -16,9 +16,7 @@ TEXT::TEXT(float x, float y, std::string name)
 
 TEXT::~TEXT() {}
 
-void TEXT::update(float deltaTime)
-{
-}
+void TEXT::update(float deltaTime) { }
 
 void TEXT::render(sf::RenderTarget& app)
 {
