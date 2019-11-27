@@ -3,8 +3,9 @@
 GameState::GameState(StateManager* stateManager)
     : m_isPlaying{true}
     , m_doodle{sf::Vector2f{10.0f, 10.0f}}
+    , m_platManager{}
     , m_stateManager(stateManager)
-	, m_TEXT_manager(1)
+	  , m_TEXT_manager(1)
 {
 }
 
@@ -26,8 +27,8 @@ void GameState::render(sf::RenderWindow& app)
     app.draw(m_backgroundSprite);
     m_doodle.render(app);
     m_platManager.render(app);
-	m_TEXT_manager.render(app);
-	m_PointCalculator.render(app);
+	  m_TEXT_manager.render(app);
+	  m_PointCalculator.render(app);
 }
 
 void GameState::init()
@@ -37,7 +38,6 @@ void GameState::init()
 }
 
 void GameState::setState(States newState) { m_stateManager->setState(newState); }
-
 //
 // sf::Texture t1, t2, t3, t4;
 // t3.loadFromFile("images/doodle.png");

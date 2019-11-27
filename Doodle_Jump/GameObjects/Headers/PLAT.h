@@ -15,7 +15,7 @@ class Plat
   public:
     enum class MoveDirection
     {
-		NONE = 0,
+		NONE = 0, //a co to za brzydkie wciecie
         RIGHT = 1,
         LEFT  = 2
     };

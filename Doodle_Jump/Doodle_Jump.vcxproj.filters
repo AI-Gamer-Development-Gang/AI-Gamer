@@ -28,8 +28,36 @@
     <Filter Include="Configuration\Sources">
       <UniqueIdentifier>{ee58325e-397a-4665-a2d1-f0e5a580cf6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{7a1feea9-ca22-4479-9f85-e1aad2c44ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Headers">
+      <UniqueIdentifier>{5fdcf3a1-3e89-42b4-8a12-c8d6fb48bb63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration\Sources">
+      <UniqueIdentifier>{14a09c2e-c014-4b3a-b363-129b08831c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{c1ff9b55-5fb8-4413-aeab-22be58b6f5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Headers">
+      <UniqueIdentifier>{2d776090-eb65-4c9c-a44e-461505257b94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Sources">
+      <UniqueIdentifier>{e094f8ff-6197-418f-90e3-d5eac45a9908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{7e1b3987-147e-457f-82a7-381877b94548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Headers">
+      <UniqueIdentifier>{ba491963-6d16-4c33-91c0-614478e36a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Sources">
+      <UniqueIdentifier>{43dc3987-cee3-4a50-aae3-2a342dc89db9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Źródło.cpp" />
     <ClCompile Include="GUI\Sources\TEXT.cpp">
       <Filter>GUI\Sources</Filter>
     </ClCompile>
@@ -39,9 +67,38 @@
     <ClCompile Include="GameObjects\Sources\Doodle.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameObjects\Sources\PLAT.cpp">
+    <ClCompile Include="Configuration\Sources\GameState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\MenuState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\ResultsState.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\State.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\Sources\StateManager.cpp">
+      <Filter>Configuration\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Sources\TEXT.cpp">
+      <Filter>GUI\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Sources\TEXT_manager.cpp">
+      <Filter>GUI\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects\Sources\PlatManager.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="GameObjects\Sources\Plat.cpp">
+      <Filter>GameObjects\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Sources\AABB.cpp">
+      <Filter>Math\Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="GameObjects\Sources\PlatManager.cpp">
       <Filter>GameObjects\Sources</Filter>
     </ClCompile>
@@ -75,9 +132,38 @@
     <ClInclude Include="GameObjects\Headers\Doodle.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
-    <ClInclude Include="GameObjects\Headers\PLAT.h">
+    <ClInclude Include="Configuration\Headers\GameState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\MenuState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\ResultsState.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\State.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\StateManager.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Headers\TEXT.h">
+      <Filter>GUI\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Headers\TEXT_manager.h">
+      <Filter>GUI\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects\Headers\PlatManager.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="GameObjects\Headers\Plat.h">
+      <Filter>GameObjects\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\Headers\Defines.h">
+      <Filter>Configuration\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Headers\AABB.h">
+      <Filter>Math\Headers</Filter>
     <ClInclude Include="GameObjects\Headers\PlatManager.h">
       <Filter>GameObjects\Headers</Filter>
     </ClInclude>

@@ -27,8 +27,8 @@ class GameState : public State
     PlatManager m_platManager;
     Doodle m_doodle;
     StateManager* m_stateManager;
-	TEXT_manager m_TEXT_manager;
-	PointCalculator m_PointCalculator;
+	  TEXT_manager m_TEXT_manager;
+	  PointCalculator m_PointCalculator;
     sf::Texture m_backgroundTexture;
     sf::Sprite m_backgroundSprite;
 };

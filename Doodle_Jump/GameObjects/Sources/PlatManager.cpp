@@ -1,4 +1,5 @@
 #include "..\Headers\PlatManager.h"
+#include <math.h>
 
 PlatManager::PlatManager()
 {
@@ -6,28 +7,7 @@ PlatManager::PlatManager()
         m_plats.emplace_back(std::make_unique<Plat>());
 }
 
-void PlatManager::update(float deltaTime)
-{
-    float lastMovingLevel = m_movingLevel;
-
-    if (m_movingUpLimit <= m_movingLevel)
-    {
-        m_moveDirection = MoveDirection::DOWN;
-        m_movingLevel   = m_movingUpLimit - deltaTime * 1000.0f;
-    }
-    else if (0.0f >= m_movingLevel)
-    {
-        m_moveDirection = MoveDirection::UP;
-        m_movingLevel   = deltaTime * 1000.0f;
-    }
-
-    if (m_moveDirection == MoveDirection::UP)
-        m_movingLevel += (m_movingUpLimit - m_movingLevel) * deltaTime;
-    else
-        m_movingLevel -= m_movingLevel * deltaTime;
-
-    incrementGeneralYPosition(m_movingLevel - lastMovingLevel);
-}
+void PlatManager::update(float deltaTime){}
 
 void PlatManager::render(sf::RenderTarget& app)
 {

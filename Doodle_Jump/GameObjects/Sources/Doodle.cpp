@@ -32,6 +32,7 @@ void Doodle::update(float deltaTime)
 }
 
 void Doodle::setDefaultPosition(const sf::Vector2f& newDefaultPosition) { m_defaultPosition = newDefaultPosition; }
+//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
 
 void Doodle::setPosition(const sf::Vector2f& newPosition)
 {
@@ -40,6 +41,7 @@ void Doodle::setPosition(const sf::Vector2f& newPosition)
 }
 
 void Doodle::move(const MoveDirection moveDirection) { m_movingDirection = moveDirection; }
+//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
 
 void Doodle::render(sf::RenderTarget& app)
 {

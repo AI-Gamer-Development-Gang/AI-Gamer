@@ -39,7 +39,6 @@ void StateManager::setState(State::States newState)
 }
 
 void StateManager::processInput(const sf::Event& e) { m_currentState->processInput(e); }
-
 void StateManager::update(const float& delta) { m_currentState->update(delta); }
 
 void StateManager::render(sf::RenderWindow& app)

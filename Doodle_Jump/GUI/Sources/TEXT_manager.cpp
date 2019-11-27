@@ -1,7 +1,6 @@
 #include "../../GUI/Headers/TEXT_manager.h"
 #include <iostream>
 
-
 TEXT_manager::TEXT_manager(int m_state)
 {
 	switch (m_state)

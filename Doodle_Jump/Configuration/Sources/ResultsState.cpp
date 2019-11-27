@@ -20,7 +20,7 @@ void ResultsState::render(sf::RenderWindow& app)
 {
     app.draw(m_backgroundSprite);
     std::cout << "Results" << std::endl;
-	m_TEXT_manager.render(app);
+	  m_TEXT_manager.render(app);
 }
 
 void ResultsState::init()

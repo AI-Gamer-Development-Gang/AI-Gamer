@@ -17,32 +17,32 @@ int main()
 	float currentDelta{ 1.0f };
 	bool exitStatus = EXIT_FAILURE;
 
-	while (app.isOpen())
-	{
-		for (currentDelta = updateMultiplication * delta; currentDelta > 0.0f; currentDelta -= delta)
-		{
-			while (app.pollEvent(e))
-			{
-				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-				{
-					exitStatus = EXIT_SUCCESS;
-					app.close();
-				}
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::RBracket))
-					updateMultiplication *= 1.25f;
-				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LBracket))
-					updateMultiplication *= 0.75f;
-				else
-					stateManager->processInput(e);
-			}
+    while (app.isOpen())
+    {
+        for (currentDelta = updateMultiplication * delta; currentDelta > 0.0f; currentDelta -= delta)
+        {
+            while (app.pollEvent(e))
+            {
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+                {
+                    exitStatus = EXIT_SUCCESS;
+                    app.close();
+                }
+                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::RBracket))
+                    updateMultiplication *= 1.25f;
+                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::LBracket))
+                    updateMultiplication *= 0.75f;
+                else
+                    stateManager->processInput(e);
+            }
 
-			if (currentDelta > delta)
-				stateManager->update(delta);
-			else
-				stateManager->update(currentDelta);
-		}
+            if (currentDelta > delta)
+                stateManager->update(delta);
+            else
+                stateManager->update(currentDelta);
+        }
 
-		stateManager->render(app);
-	}
-	return exitStatus | (stateManager->getEndStatus() ? EXIT_SUCCESS : EXIT_FAILURE);
+        stateManager->render(app);
+    }
+    return exitStatus | (stateManager->getEndStatus() ? EXIT_SUCCESS : EXIT_FAILURE);
 }
