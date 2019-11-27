@@ -7,15 +7,15 @@ constexpr float delta = 1.0f / 60.0f;
 
 int main()
 {
-    srand(time(NULL));
-    sf::RenderWindow app(sf::VideoMode(windowSizeX, windowSizeY), "Doodle Game!");
-    sf::Event e;
-    const std::unique_ptr<StateManager> stateManager(std::make_unique<StateManager>());
+	srand(time(NULL));
+	sf::RenderWindow app(sf::VideoMode(windowSizeX, windowSizeY), "Doodle Game!");
+	sf::Event e;
+	const std::unique_ptr<StateManager> stateManager(std::make_unique<StateManager>());
 
-    app.setFramerateLimit(60);
-    float updateMultiplication{1.0f};
-    float currentDelta{1.0f};
-    bool exitStatus = EXIT_FAILURE;
+	app.setFramerateLimit(60);
+	float updateMultiplication{ 1.0f };
+	float currentDelta{ 1.0f };
+	bool exitStatus = EXIT_FAILURE;
 
     while (app.isOpen())
     {

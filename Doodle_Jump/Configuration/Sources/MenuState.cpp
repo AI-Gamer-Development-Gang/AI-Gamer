@@ -4,6 +4,7 @@
 
 MenuState::MenuState(StateManager* stateManager)
 	: m_stateManager(stateManager)
+	, m_TEXT_manager(0)
 {
 }
 

@@ -7,9 +7,8 @@ PlatManager::PlatManager()
         m_plats.emplace_back(std::make_unique<Plat>());
 }
 
-void PlatManager::update(float deltaTime) {}
-//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
-//tutaj nie jestem tego pewien w sumie xd
+void PlatManager::update(float deltaTime){}
+
 void PlatManager::render(sf::RenderTarget& app)
 {
     for (auto& plat : m_plats)

@@ -39,10 +39,7 @@ void StateManager::setState(State::States newState)
 }
 
 void StateManager::processInput(const sf::Event& e) { m_currentState->processInput(e); }
-//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
-
 void StateManager::update(const float& delta) { m_currentState->update(delta); }
-//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
 
 void StateManager::render(sf::RenderWindow& app)
 {
@@ -53,4 +50,3 @@ void StateManager::render(sf::RenderWindow& app)
 }
 
 const bool StateManager::getEndStatus() const { return m_exitStatus; }
-//trzymajmy sie konwencji - jesli wszystkie definicje sa rozwalone na pare linijek to nawet te krotkie niech tez beda
