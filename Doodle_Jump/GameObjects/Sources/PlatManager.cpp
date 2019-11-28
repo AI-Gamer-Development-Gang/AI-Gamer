@@ -7,7 +7,17 @@ PlatManager::PlatManager()
         m_plats.emplace_back(std::make_unique<Plat>());
 }
 
-void PlatManager::update(float deltaTime){}
+void PlatManager::update(float deltaTime)
+{
+    if (m_distance <= 0)
+    {
+        m_distance = 0;
+        m_duration = 0;
+    }
+    m_duration += deltaTime;
+    m_distance = m_doodleJumpVelocity * m_duration - m_gravitationalAcceleration * m_duration * m_duration / 2.0f;
+    incrementGeneralYPosition(m_distance);
+}
 
 void PlatManager::render(sf::RenderTarget& app)
 {
@@ -18,5 +28,5 @@ void PlatManager::render(sf::RenderTarget& app)
 void PlatManager::incrementGeneralYPosition(float deltaY)
 {
     for (auto& plat : m_plats)
-        plat->setPosition(sf::Vector2f(plat->getPosition() + sf::Vector2f(0.0f, deltaY)));
+        plat->setPosition(sf::Vector2f(plat->getDefaultPosition() + sf::Vector2f(0.0f, deltaY)));
 }

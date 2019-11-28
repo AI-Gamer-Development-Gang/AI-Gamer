@@ -26,6 +26,7 @@ class Plat
     void update(float deltaTime);
     void render(sf::RenderTarget& app);
     void setDefaultPosition(const sf::Vector2f& newDefaultPosition);
+    const sf::Vector2f getDefaultPosition() const;
     void setPosition(const sf::Vector2f& newPosition);
     const sf::Vector2f getPosition() const;
     void move(float deltaTime, MoveDirection moveDirection);

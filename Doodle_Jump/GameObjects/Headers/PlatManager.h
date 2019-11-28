@@ -17,6 +17,9 @@ class PlatManager
 
   private:
     std::vector<std::unique_ptr<Plat>> m_plats{};
-    const float m_doodleJumpAcceleration{};
-    const float m_doodleWeight{};
+    const float m_doodleJumpVelocity{350.0f};
+    const float m_gravitationalAcceleration{350.f};
+    float m_generalYPosition{};
+    float m_duration{};
+    float m_distance{};
 };
