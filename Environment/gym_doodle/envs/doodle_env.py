@@ -8,12 +8,15 @@ import time
 import pyautogui
 import pygetwindow as gw
 
+import pyscreenshot
+import cv2
+
 
 class doodle_env(gym.Env):
     metadata = {'render.modes': ['human']}
     reward_range = (float(0), float(1))
 
-    def gameboot(path='C:\\Users\\tomek\\source\\repos\\Project14\\Release\\Project14.exe'):
+    def gameboot(self, path='C:\\Users\\tomek\\source\\repos\\Project14\\Release\\Project14.exe'):
         proc = Popen([path])
         time.sleep(1)
 
@@ -56,10 +59,21 @@ class doodle_env(gym.Env):
             time.sleep(1)
             pyautogui.keyUp('space')
 
+    def reward_detection(self, img):
+        img = cv2.imread(img)
+        crop_img = img[75:105, 0:100]   # img cut
+        #cv2.imshow("cropped", crop_img)
+        #   detection evry number on crop_img
+        #   recognizing them (ML)
+
+
+
+
+
     def __init__(self):
-        self.action_space = spaces.Discrete(2) #LEFT or RIGHT
-        self.observation_space = spaces.Tuple((spaces.Discrete(2), #each discrete space for each platform coordinates
-                                               spaces.Discrete(2), #IT CAN BE A PICTURE INSTEAD
+        self.action_space = spaces.Discrete(3)  # LEFT or RIGHT or WAIT
+        self.observation_space = spaces.Tuple((spaces.Discrete(2),  # each discrete space for each platform coordinates
+                                               spaces.Discrete(2),  # IT CAN BE A PICTURE INSTEAD
                                                spaces.Discrete(2),
                                                spaces.Discrete(2),
                                                spaces.Discrete(2),
@@ -68,6 +82,7 @@ class doodle_env(gym.Env):
                                                spaces.Discrete(2),
                                                spaces.Discrete(2),
                                                spaces.Discrete(2)))
+        self.reward = 0
 
         self.gameboot()
         self.win_pos_X, self.win_pos_Y = self.mouseset()
@@ -77,8 +92,32 @@ class doodle_env(gym.Env):
 
     def step(self, action):
         self.actions('unpause', self.win_pos_X, self.win_pos_Y)
-        # take action
+
+        if self.action_space[0]:                                                # map action_space to real action
+            self.actions('left', self.win_pos_X, self.win_pos_Y)                # take action
+        elif self.action_space[1]:
+            self.actions('right', self.win_pos_X, self.win_pos_Y)
+        elif self.action_space[2]:
+            self.actions('wait', self.win_pos_X, self.win_pos_Y)
+
         self.actions('pause', self.win_pos_X, self.win_pos_Y)
+
+        obs = pyscreenshot.grab(bbox=(self.win_pos_X, self.win_pos_Y, self.win_pos_X + 440, self.win_pos_Y + 530))
+        # TODO:
+        # - reward extraction
+        #   1. cutting part of image which consist a reward
+        #   2. conversion img to arr
+        #   3. digit detection
+        #   4. digit recognition
+        #   5. making number from these digits ^
+        #   6. return number
+        # - platform coordinates extraction // conversion img to np arr == OBSERVATIONS
+        # - deleting img from folder (obs)
+
+
+        # *magic* extraction of reward and platform coordinates
+        # obs might be a screen but reward must be an integer
+
         # return obs, rew, done, info
         pass
 
@@ -94,10 +133,10 @@ class doodle_env(gym.Env):
     def close(self):
         pass
 
-    def action(self):
-        # map action_space to real action only (???)
+    '''
+    def action(self): # NO IDEA
         pass
 
-    # def observation(self): #OBSERVATION SHOULD BE A VARIABLE NOT A METHOD
-        # pass
-
+    def observation(self): #OBSERVATION SHOULD BE A VARIABLE NOT A METHOD
+        pass
+    '''
