@@ -102,11 +102,19 @@ class doodle_env(gym.Env):
 
         self.actions('pause', self.win_pos_X, self.win_pos_Y)
 
-        obs = pyscreenshot.grab(bbox=(self.win_pos_X, self.win_pos_Y, self.win_pos_X + 440, self.win_pos_Y + 530))
+        img = pyscreenshot.grab(bbox=(self.win_pos_X, self.win_pos_Y, self.win_pos_X + 440, self.win_pos_Y + 530))
+
+        img = img[75:110, 5:100]
+
+        scale_percent = 220  # percent of original size
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        img = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
         # TODO:
         # - reward extraction
-        #   1. cutting part of image which consist a reward
-        #   2. conversion img to arr
+        #   1. cutting part of image which consist a reward DONE
+        #   2. conversion img to arr DONE
         #   3. digit detection
         #   4. digit recognition
         #   5. making number from these digits ^
