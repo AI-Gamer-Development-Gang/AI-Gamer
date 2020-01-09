@@ -31,15 +31,15 @@ class doodle_env(gym.Env):
         if to_perform == 'wait':
             time.sleep(0.1)
         elif to_perform == 'start_game':
-            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 294);
+            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 294)
             time.sleep(1)
             pyautogui.mouseUp()
         elif to_perform == 'exit':
-            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 494);
+            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 494)
             time.sleep(1)
             pyautogui.mouseUp()
         elif to_perform == 'try_again':
-            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 404);
+            pyautogui.mouseDown(x=win_pos_X + 220, y=win_pos_Y + 404)
             time.sleep(1)
             pyautogui.mouseUp()
         elif to_perform == 'go_left':

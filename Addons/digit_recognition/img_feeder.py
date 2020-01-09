@@ -45,7 +45,7 @@ score = (len(y_test) - sum(score))/len(y_test)
 
 img = cv2.imread('E:\\Scrinysmieci2.0\\doodle2.jpg')
 x = reward_detection.detection(img, 20)
-pred(x)
+
 
 '''    
 n = arr.swapaxes(1,2)
