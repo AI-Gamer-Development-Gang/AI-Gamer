@@ -16,6 +16,9 @@ import numpy as np
 
 import time
 
+
+#'E:\\Scrinysmieci2.0\\doodle2.jpg'
+
 def gameboot(path='C:\\Users\\tomek\\source\\repos\\Project14\\Release\\Project14.exe'):
     Popen([path])
     time.sleep(1)
@@ -69,6 +72,19 @@ def preprocess(img, scale_percent = 220):
     '''
 
 
+def extract_digits(img):
+    # finding contours and creating rectangle around digit:
+    arr = []
+    contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    for cnt in reversed(contours):  # iterating through every digit
+        x, y, w, h = cv2.boundingRect(cnt)
+        tmp = img[y:y+h, x:x+w].copy()        # tmp = img[y:y+h+5, x:x+w].copy()
+        done = cv2.resize(tmp, (32, 32), interpolation=cv2.INTER_AREA)
+        arr.append(done)
+
+    return arr
+
+
 if __name__ == '__main__':
     
     gameboot()
@@ -85,7 +101,7 @@ if __name__ == '__main__':
             cv2.imshow("", img)
             cv2.waitKey(1)
     '''
-            img = rd.extract_digits(img)
+            img = extract_digits(img)
             imgs = np.append(imgs, img, axis = 0)
             
     np.save('imgs', imgs)        
